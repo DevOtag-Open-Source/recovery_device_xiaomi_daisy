@@ -37,3 +37,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# Keystore
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=msm8953
