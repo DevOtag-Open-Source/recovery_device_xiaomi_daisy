@@ -56,6 +56,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
 
 # Partitions
@@ -88,10 +89,11 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_EXTRA_LANGUAGES := true
 TW_HAS_EDL_MODE := true
 TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_NTFS_3G := true
+RECOVERY_SDCARD_ON_DATA := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
 TW_USE_TOOLBOX := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_INCLUDE_REPACKTOOLS := true
